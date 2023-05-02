@@ -1,0 +1,409 @@
+/**INTEGRANTES: PAULA VALDERRAMA, FRANCISCO TRUJILLO**/
+
+html {
+    /**Reset para rems**/
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/** General **/
+
+@font-face {
+    font-family: segoi-ui;
+    src: url('../segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
+}
+
+body {
+    font-family: segoi-ui;
+}
+
+.contenedor {
+    max-width: 80rem;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img {
+    /**Le doy un tamaño maximo de 100% del contenedor a la imagen**/
+    max-width: 100%;
+}
+
+
+/**Utilidades**/
+
+.seccion {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.fw-400 {
+    /**Para hacer textos mas delgados**/
+    font-weight: 400;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+/** Header **/
+
+.contenido-header {
+    height: 100%;
+    /**posiciona elementos de acuerdo a propiedades de flexbox**/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.barra-menu {
+    margin: 1rem 0;
+    align-content: center;
+}
+
+.logo {
+    flex-basis: 20%;
+}
+
+
+/**Navegador**/
+
+.navegacion {
+    margin: 2rem 0 2rem;
+}
+
+.navegacion a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 3.5rem;
+}
+
+.navegacion a:hover {
+    color: gray;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+nav {
+    float: left;
+    /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    /* Limpiamos errores de float */
+}
+
+nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 20px;
+    color: #053477;
+    text-decoration: none;
+}
+
+
+/** Titulo **/
+.imagen-fondo{
+height: 100vh;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+position: relative;
+z-index: 1;
+background-image: url("../img/site-header-background.jpeg");
+}
+
+.imagen-fondo h1{
+font-size: 5.8rem;
+color:#053477;
+position:absolute;
+z-index: 3;
+width: 40%;
+padding: 28rem 20rem;
+}
+
+.imagen-fondo .negro{
+height: 100vh;
+width: 50%;
+background-color: rgba(100,100,100,0.4);
+position:absolute;
+z-index: 2;
+}
+
+.header img{
+height:100vh;
+background-size:cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+position: relative;
+z-index: 1;
+}
+
+/**Nuestro Trabajo**/
+
+.seccion1 {
+    display:flex;
+    justify-content: center;
+    margin: 5rem 0;
+    height: 48rem;
+}
+
+.seccion1 h2{
+    font-size:5rem;
+    color:#2a4b7a;
+}
+
+.seccion1 p{
+    font-size: 1.8rem;
+    color:#053477
+}
+
+.izquierda{
+    padding:5rem 4rem;
+}
+
+.derecha{
+    display: flex;
+    flex-direction: column;
+}
+
+.derecha img{
+    width: 9rem;
+}
+
+.derecha h3{
+    font-size: 3rem;
+    color: rgb(255, 145, 0);
+}
+
+.envios {
+    display: flex;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.envios-texto{
+    width:45rem;
+    display:flex;
+    flex-direction: column;
+    margin-left:4rem;
+}
+
+.encomienda{
+    display:flex;
+    margin-bottom: 5rem;
+    text-align: center;
+
+}
+
+.encomienda-texto{
+    width:45rem;
+    display:flex;
+    flex-direction:column;
+    margin-left:4rem;
+}
+
+.economia{
+    display: flex;
+    text-align:center;
+    margin-bottom:5rem;
+}
+
+.economia-texto{
+    display:flex;
+    width:45rem;
+    flex-direction:column;
+    margin-left: 4rem;
+}
+
+
+/**Nuestro equipo**/
+
+.titulo-equipo h2{
+    font-size: 7rem;
+    color:#2a4b7a;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.contenedor-equipo{
+    display: flex;
+    width: 120rem;
+    justify-items: center;
+    text-align: center;
+    max-width: 90rem;
+    margin:0 auto;
+    height: 100%;
+}
+
+.contenedor-equipo h3{
+    font-size: 2.5rem;
+    color: #f75f1c;
+}
+
+.contenedor-equipo p{
+    font-size: 1.8rem;
+    color:#053477;
+}
+
+.nuestro-equipo{
+    margin: 0 2rem;
+}
+
+
+/**Contacto formulario**/
+
+.contacto{
+    background-color: #2a4b7a;
+    display:flex;
+    flex-direction: row;
+    height: 50rem;
+}
+
+.titulo-contacto{
+    color:#f75f1c;
+    flex-basis: 30%;
+}
+
+.contacto h2{
+    font-size: 3.5rem;
+    margin-top: 30%;
+}
+
+.izquierda2{
+    display:flex;
+    flex-direction: column;
+    padding-left: 50rem;
+}
+
+.derecha2{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.entrada{
+    height: 20rem;
+}
+
+.contacto legend{
+    font-size:2.2rem;
+    color: #f75f1c;
+}
+
+.contacto label, li{
+    color: white;
+}
+
+.contacto .button{
+    font-size: 1.5rem;
+    color: white;
+    background-color: #f75f1c;
+    width: 1.8rem;
+    padding: 1rem 6rem 1rem 2.2rem;
+    margin-top: 2rem;
+    display:inline-block;
+    text-align:center;
+    border: none;
+}
+
+.correo{
+    display:flex;
+    flex-direction: column;
+    padding-right: 55rem;
+}
+
+input, select, textarea{
+    padding: 0.5rem;
+    flex-direction: column;
+    border-style: none;
+}
+
+.contacto{
+    font-size: 1.3rem;
+}
+
+.izquierda2 ul{
+    list-style: none;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+}
+
+
+/**Footer**/
+
+.barra2{
+    display:flex;
+    background-color: #ad481d;
+    height: 5rem;
+    justify-content: center;
+}
+
+.barra2 img{
+    padding: 0.6rem 10rem;
+    height: 4rem;
+}
+
+footer span::after{
+    content:"";
+    display:block;
+    height: 0.2rem;
+    background-color: #e35619;
+}
+
+.footer-texto{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    color: #2a4b7a;
+}
+
+footer article{
+    width: 22rem;
+    padding-top: 1rem;
+}
+
+.caja-texto{
+    width: 100rem;
+    margin-left: 25%;
+}
+
+.caja-texto span{
+    color:black;
+    font-size: 2rem;
+    font-weight: 600;
+}
